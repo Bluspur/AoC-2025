@@ -1,0 +1,1 @@
+C:\Users\craig\Code\AoC-2025\template\target\debug\libsolution.rlib: C:\Users\craig\Code\AoC-2025\template\src\lib.rs C:\Users\craig\Code\AoC-2025\template\src\part_1.rs C:\Users\craig\Code\AoC-2025\template\src\part_2.rs

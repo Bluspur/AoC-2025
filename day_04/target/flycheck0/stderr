@@ -1,0 +1,486 @@
+   0.052356000s  INFO prepare_target{force=false package_id=template v0.1.0 (D:\code\AoC-2025\day_04) target="solution"}: cargo::core::compiler::fingerprint: fingerprint error for template v0.1.0 (D:\code\AoC-2025\day_04)/Check { test: false }/TargetInner { ..: lib_target("solution", ["lib"], "D:\\code\\AoC-2025\\day_04\\src\\lib.rs", Edition2024) }
+   0.052397800s  INFO prepare_target{force=false package_id=template v0.1.0 (D:\code\AoC-2025\day_04) target="solution"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\template-972e903a3f4edbed\lib-solution`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.062856700s  INFO prepare_target{force=false package_id=clap v4.5.53 target="clap"}: cargo::core::compiler::fingerprint: fingerprint error for clap v4.5.53/Check { test: false }/TargetInner { benched: false, ..: lib_target("clap", ["lib"], "C:\\Users\\craig\\scoop\\persist\\rustup\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\clap-4.5.53\\src\\lib.rs", Edition2021) }
+   0.062885200s  INFO prepare_target{force=false package_id=clap v4.5.53 target="clap"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\clap-8aa5dbe13c36af6a\lib-clap`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.063569200s  INFO prepare_target{force=false package_id=clap_builder v4.5.53 target="clap_builder"}: cargo::core::compiler::fingerprint: fingerprint error for clap_builder v4.5.53/Check { test: false }/TargetInner { benched: false, ..: lib_target("clap_builder", ["lib"], "C:\\Users\\craig\\scoop\\persist\\rustup\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\clap_builder-4.5.53\\src\\lib.rs", Edition2021) }
+   0.063590100s  INFO prepare_target{force=false package_id=clap_builder v4.5.53 target="clap_builder"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\clap_builder-037bd20649f14ee5\lib-clap_builder`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.067072200s  INFO prepare_target{force=false package_id=clap_derive v4.5.49 target="clap_derive"}: cargo::core::compiler::fingerprint: fingerprint error for clap_derive v4.5.49/Build/TargetInner { benched: false, for_host: true, proc_macro: true, ..: lib_target("clap_derive", ["proc-macro"], "C:\\Users\\craig\\scoop\\persist\\rustup\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\clap_derive-4.5.49\\src\\lib.rs", Edition2021) }
+   0.067096100s  INFO prepare_target{force=false package_id=clap_derive v4.5.49 target="clap_derive"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\clap_derive-3143396cdd32a683\lib-clap_derive`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.070068700s  INFO prepare_target{force=false package_id=syn v2.0.111 target="syn"}: cargo::core::compiler::fingerprint: fingerprint error for syn v2.0.111/Build/TargetInner { ..: lib_target("syn", ["lib"], "C:\\Users\\craig\\scoop\\persist\\rustup\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\syn-2.0.111\\src\\lib.rs", Edition2021) }
+   0.070087100s  INFO prepare_target{force=false package_id=syn v2.0.111 target="syn"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\syn-3f76a69bffc23c90\lib-syn`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.070555600s  INFO prepare_target{force=false package_id=clap-verbosity-flag v3.0.4 target="clap_verbosity_flag"}: cargo::core::compiler::fingerprint: fingerprint error for clap-verbosity-flag v3.0.4/Check { test: false }/TargetInner { ..: lib_target("clap_verbosity_flag", ["lib"], "C:\\Users\\craig\\scoop\\persist\\rustup\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\clap-verbosity-flag-3.0.4\\src\\lib.rs", Edition2021) }
+   0.070575500s  INFO prepare_target{force=false package_id=clap-verbosity-flag v3.0.4 target="clap_verbosity_flag"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\clap-verbosity-flag-6259ff0a094bad22\lib-clap_verbosity_flag`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.071295900s  INFO prepare_target{force=false package_id=env_logger v0.11.8 target="env_logger"}: cargo::core::compiler::fingerprint: fingerprint error for env_logger v0.11.8/Check { test: false }/TargetInner { ..: lib_target("env_logger", ["lib"], "C:\\Users\\craig\\scoop\\persist\\rustup\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\env_logger-0.11.8\\src\\lib.rs", Edition2021) }
+   0.071318100s  INFO prepare_target{force=false package_id=env_logger v0.11.8 target="env_logger"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\env_logger-b410edb3dcc5a260\lib-env_logger`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.071819700s  INFO prepare_target{force=false package_id=env_filter v0.1.4 target="env_filter"}: cargo::core::compiler::fingerprint: fingerprint error for env_filter v0.1.4/Check { test: false }/TargetInner { ..: lib_target("env_filter", ["lib"], "C:\\Users\\craig\\scoop\\persist\\rustup\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\env_filter-0.1.4\\src\\lib.rs", Edition2021) }
+   0.071836600s  INFO prepare_target{force=false package_id=env_filter v0.1.4 target="env_filter"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\env_filter-ddbf0fe80238f6ed\lib-env_filter`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.072260800s  INFO prepare_target{force=false package_id=regex v1.12.2 target="regex"}: cargo::core::compiler::fingerprint: fingerprint error for regex v1.12.2/Check { test: false }/TargetInner { ..: lib_target("regex", ["lib"], "C:\\Users\\craig\\scoop\\persist\\rustup\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\regex-1.12.2\\src\\lib.rs", Edition2021) }
+   0.072276900s  INFO prepare_target{force=false package_id=regex v1.12.2 target="regex"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\regex-d1e9bd7b10c0293b\lib-regex`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.073153900s  INFO prepare_target{force=false package_id=regex-automata v0.4.13 target="regex_automata"}: cargo::core::compiler::fingerprint: fingerprint error for regex-automata v0.4.13/Check { test: false }/TargetInner { benched: false, ..: lib_target("regex_automata", ["lib"], "C:\\Users\\craig\\scoop\\persist\\rustup\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\regex-automata-0.4.13\\src\\lib.rs", Edition2021) }
+   0.073171300s  INFO prepare_target{force=false package_id=regex-automata v0.4.13 target="regex_automata"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\regex-automata-a19a0a74a1d1c0b6\lib-regex_automata`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.073807000s  INFO prepare_target{force=false package_id=jiff v0.2.16 target="jiff"}: cargo::core::compiler::fingerprint: fingerprint error for jiff v0.2.16/Check { test: false }/TargetInner { ..: lib_target("jiff", ["lib"], "C:\\Users\\craig\\scoop\\persist\\rustup\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\jiff-0.2.16\\src\\lib.rs", Edition2021) }
+   0.073824600s  INFO prepare_target{force=false package_id=jiff v0.2.16 target="jiff"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\jiff-0d953bdf79869188\lib-jiff`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.074256600s  INFO prepare_target{force=false package_id=thiserror v2.0.17 target="thiserror"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror v2.0.17/Check { test: false }/TargetInner { ..: lib_target("thiserror", ["lib"], "C:\\Users\\craig\\scoop\\persist\\rustup\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\thiserror-2.0.17\\src\\lib.rs", Edition2021) }
+   0.074274100s  INFO prepare_target{force=false package_id=thiserror v2.0.17 target="thiserror"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\thiserror-01686be57c2534a0\lib-thiserror`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.075543200s  INFO prepare_target{force=false package_id=thiserror-impl v2.0.17 target="thiserror_impl"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror-impl v2.0.17/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("thiserror_impl", ["proc-macro"], "C:\\Users\\craig\\scoop\\persist\\rustup\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\thiserror-impl-2.0.17\\src\\lib.rs", Edition2021) }
+   0.075560900s  INFO prepare_target{force=false package_id=thiserror-impl v2.0.17 target="thiserror_impl"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\thiserror-impl-5bbc3b8f65847e4d\lib-thiserror_impl`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.076042900s  INFO prepare_target{force=false package_id=template v0.1.0 (D:\code\AoC-2025\day_04) target="solution"}: cargo::core::compiler::fingerprint: fingerprint error for template v0.1.0 (D:\code\AoC-2025\day_04)/Check { test: true }/TargetInner { ..: lib_target("solution", ["lib"], "D:\\code\\AoC-2025\\day_04\\src\\lib.rs", Edition2024) }
+   0.076061800s  INFO prepare_target{force=false package_id=template v0.1.0 (D:\code\AoC-2025\day_04) target="solution"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\template-43c260060fce33a8\test-lib-solution`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.076595400s  INFO prepare_target{force=false package_id=template v0.1.0 (D:\code\AoC-2025\day_04) target="template"}: cargo::core::compiler::fingerprint: fingerprint error for template v0.1.0 (D:\code\AoC-2025\day_04)/Check { test: false }/TargetInner { name: "template", doc: true, ..: with_path("D:\\code\\AoC-2025\\day_04\\src\\main.rs", Edition2024) }
+   0.076613800s  INFO prepare_target{force=false package_id=template v0.1.0 (D:\code\AoC-2025\day_04) target="template"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\template-31f0c0511c2f023b\bin-template`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.077117200s  INFO prepare_target{force=false package_id=template v0.1.0 (D:\code\AoC-2025\day_04) target="template"}: cargo::core::compiler::fingerprint: fingerprint error for template v0.1.0 (D:\code\AoC-2025\day_04)/Check { test: true }/TargetInner { name: "template", doc: true, ..: with_path("D:\\code\\AoC-2025\\day_04\\src\\main.rs", Edition2024) }
+   0.077134200s  INFO prepare_target{force=false package_id=template v0.1.0 (D:\code\AoC-2025\day_04) target="template"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\code\AoC-2025\day_04\target\debug\.fingerprint\template-15a03d2db8602acf\test-bin-template`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking jiff v0.2.16
+    Checking regex-automata v0.4.13
+   Compiling syn v2.0.111
+    Checking clap_builder v4.5.53
+    Checking regex v1.12.2
+    Checking env_filter v0.1.4
+   Compiling clap_derive v4.5.49
+   Compiling thiserror-impl v2.0.17
+    Checking env_logger v0.11.8
+    Checking thiserror v2.0.17
+    Checking clap v4.5.53
+    Checking clap-verbosity-flag v3.0.4
+    Checking template v0.1.0 (D:\code\AoC-2025\day_04)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.57s

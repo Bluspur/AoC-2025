@@ -1,0 +1,13 @@
+D:\code\AoC-2025\day_02\target\debug\deps\thiserror-01686be57c2534a0.d: C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\lib.rs C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\aserror.rs C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\display.rs C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\provide.rs C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\var.rs C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\private.rs D:\code\AoC-2025\day_02\target\debug\build\thiserror-93aac180a33a5953\out/private.rs
+
+D:\code\AoC-2025\day_02\target\debug\deps\libthiserror-01686be57c2534a0.rmeta: C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\lib.rs C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\aserror.rs C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\display.rs C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\provide.rs C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\var.rs C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\private.rs D:\code\AoC-2025\day_02\target\debug\build\thiserror-93aac180a33a5953\out/private.rs
+
+C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\lib.rs:
+C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\aserror.rs:
+C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\display.rs:
+C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\provide.rs:
+C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\var.rs:
+C:\Users\craig\scoop\persist\rustup\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.17\src\private.rs:
+D:\code\AoC-2025\day_02\target\debug\build\thiserror-93aac180a33a5953\out/private.rs:
+
+# env-dep:OUT_DIR=D:\\code\\AoC-2025\\day_02\\target\\debug\\build\\thiserror-93aac180a33a5953\\out
