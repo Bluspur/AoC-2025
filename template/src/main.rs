@@ -15,7 +15,7 @@ struct Args {
     #[command(flatten)]
     verbosity: clap_verbosity_flag::Verbosity,
     input: std::path::PathBuf,
-    #[arg(short, long, default_value = "Both")]
+    #[arg(short, long, default_value = "both")]
     part: Part,
 }
 
