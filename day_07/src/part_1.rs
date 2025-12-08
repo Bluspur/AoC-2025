@@ -9,19 +9,14 @@ pub enum PartError {
 }
 
 pub fn run(input: &str) -> Result<u64, PartError> {
-    let worksheet = Worksheet::from_str(input)?;
-    let score = worksheet
-        .problems
-        .iter()
-        .map(|problem| problem.solve())
-        .sum();
-    Ok(score)
+    todo!("Implement solution");
 }
 
 #[cfg(test)]
 mod tests {
+    use super::*;
+
     #[test]
-    #[ignore]
     fn test_run_part() {
         todo!()
     }

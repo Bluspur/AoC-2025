@@ -69,20 +69,32 @@ pub enum Operator {
     Addition,
     Multiply,
 }
+impl TryFrom<char> for Operator {
+    type Error = ParseError;
+    fn try_from(c: char) -> std::result::Result<Self, Self::Error> {
+        match c {
+            '+' => Ok(Operator::Addition),
+            '*' => Ok(Operator::Multiply),
+            _ => Err(ParseError::InvalidOperatorChar(c)),
+        }
+    }
+}
 impl FromStr for Operator {
     type Err = ParseError;
     fn from_str(s: &str) -> std::result::Result<Self, Self::Err> {
         match s {
             "+" => Ok(Operator::Addition),
             "*" => Ok(Operator::Multiply),
-            _ => Err(ParseError::InvalidOperator(s.to_string())),
+            _ => Err(ParseError::InvalidOperatorString(s.to_string())),
         }
     }
 }
 #[derive(Debug, Error, PartialEq, Eq)]
 pub enum ParseError {
     #[error("Invalid operator: {0}")]
-    InvalidOperator(String),
+    InvalidOperatorString(String),
+    #[error("Invalid operator: {0}")]
+    InvalidOperatorChar(char),
     #[error("Expected at least one line for operands")]
     MissingOperands,
     #[error(transparent)]
@@ -107,7 +119,7 @@ mod tests {
     fn test_parse_invalid_operator() {
         assert_eq!(
             Operator::from_str("x"),
-            Err(ParseError::InvalidOperator("x".to_string()))
+            Err(ParseError::InvalidOperatorString("x".to_string()))
         );
     }
 
