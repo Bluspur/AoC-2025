@@ -9,15 +9,7 @@ pub enum PartError {
 }
 
 pub fn run(input: &str) -> Result<u64, PartError> {
-    todo!("Implement solution");
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn test_run_part() {
-        todo!()
-    }
+    let manifold = TachyonManifold::from_str(input)?;
+    let count = manifold.count_reflections();
+    Ok(count)
 }

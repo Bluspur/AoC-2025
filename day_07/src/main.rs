@@ -14,6 +14,7 @@ enum Part {
 struct Args {
     #[command(flatten)]
     verbosity: clap_verbosity_flag::Verbosity,
+    #[arg(short, long)]
     input: std::path::PathBuf,
     #[arg(short, long, default_value = "both")]
     part: Part,
