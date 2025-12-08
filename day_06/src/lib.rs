@@ -1,92 +1,10 @@
-use std::{num::ParseIntError, str::FromStr};
+use std::str::FromStr;
 
 use anyhow::{Context, Result};
 use thiserror::Error;
 
 mod part_1;
 mod part_2;
-#[derive(Debug, PartialEq, Eq)]
-pub struct Database {
-    fresh_id_ranges: Vec<IdRange>,
-    available_ids: Vec<IngredientId>,
-}
-impl Database {
-    pub fn is_fresh(&self, id: IngredientId) -> bool {
-        for range in self.fresh_id_ranges.iter() {
-            if range.contains(id) {
-                return true;
-            }
-        }
-        false
-    }
-}
-#[derive(Debug, Copy, Clone, PartialEq, Eq)]
-pub struct IdRange {
-    min: IngredientId,
-    max: IngredientId,
-}
-impl IdRange {
-    pub fn new(min: IngredientId, max: IngredientId) -> Self {
-        Self { min, max }
-    }
-    pub fn contains(&self, id: IngredientId) -> bool {
-        id >= self.min && id <= self.max
-    }
-    pub fn len(&self) -> usize {
-        self.max - self.min + 1
-    }
-}
-
-pub type IngredientId = usize;
-
-impl FromStr for Database {
-    type Err = ParseError;
-    fn from_str(s: &str) -> std::result::Result<Self, Self::Err> {
-        let (raw_ranges, raw_available) = s
-            .trim()
-            .split_once("\n\n")
-            .ok_or(ParseError::NoDBSeperator)?;
-        let fresh_id_ranges = parse_ranges(raw_ranges)?;
-        let available_ids = parse_available(raw_available)?;
-        let db = Database {
-            fresh_id_ranges,
-            available_ids,
-        };
-        Ok(db)
-    }
-}
-
-fn parse_ranges(s: &str) -> Result<Vec<IdRange>, ParseError> {
-    let mut set = Vec::new();
-    for raw_range in s.lines() {
-        let (min, max) = raw_range
-            .split_once('-')
-            .ok_or(ParseError::NoRangeSeperator)?;
-        let min = IngredientId::from_str(min)?;
-        let max = IngredientId::from_str(max)?;
-        let range = IdRange { min, max };
-        set.push(range);
-    }
-    Ok(set)
-}
-fn parse_available(s: &str) -> Result<Vec<IngredientId>, ParseError> {
-    let mut available = Vec::new();
-    for raw_id in s.lines() {
-        let id = IngredientId::from_str(raw_id)?;
-        available.push(id);
-    }
-    Ok(available)
-}
-
-#[derive(Debug, Error)]
-pub enum ParseError {
-    #[error("Expected input to have a blank line between ranges and available")]
-    NoDBSeperator,
-    #[error("Expected range to have a '-' between the min and max bounds")]
-    NoRangeSeperator,
-    #[error(transparent)]
-    BadID(#[from] ParseIntError),
-}
 
 pub fn run_part_1(input: &str) -> Result<u64> {
     part_1::run(input).context("Failed to run part 1")
@@ -96,24 +14,127 @@ pub fn run_part_2(input: &str) -> Result<u64> {
     part_2::run(input).context("Failed to run part 2")
 }
 
+#[derive(Debug, PartialEq, Eq)]
+pub struct Worksheet {
+    pub problems: Vec<Problem>,
+}
+impl FromStr for Worksheet {
+    type Err = ParseError;
+    fn from_str(s: &str) -> std::result::Result<Self, Self::Err> {
+        let mut lines = s.trim().lines().rev();
+
+        let operators = lines
+            .next()
+            .ok_or(ParseError::MissingOperands)?
+            .split_whitespace()
+            .map(|raw_operator| Operator::from_str(raw_operator))
+            .collect::<Result<Vec<_>, _>>()?;
+
+        let mut p_operands = vec![vec![]; operators.len()];
+
+        for line in lines {
+            for (i, raw) in line.split_whitespace().enumerate() {
+                let operand = raw.parse::<u64>()?;
+                p_operands[i].push(operand);
+            }
+        }
+
+        let mut problems = vec![];
+        for i in 0..p_operands.len() {
+            let problem = Problem {
+                operands: p_operands[i].clone(),
+                operator: operators[i],
+            };
+            problems.push(problem);
+        }
+
+        Ok(Worksheet { problems })
+    }
+}
+#[derive(Debug, PartialEq, Eq)]
+pub struct Problem {
+    operands: Vec<u64>,
+    operator: Operator,
+}
+impl Problem {
+    pub fn solve(&self) -> u64 {
+        match self.operator {
+            Operator::Addition => self.operands.iter().sum(),
+            Operator::Multiply => self.operands.iter().product(),
+        }
+    }
+}
+#[derive(Debug, Copy, Clone, PartialEq, Eq)]
+pub enum Operator {
+    Addition,
+    Multiply,
+}
+impl FromStr for Operator {
+    type Err = ParseError;
+    fn from_str(s: &str) -> std::result::Result<Self, Self::Err> {
+        match s {
+            "+" => Ok(Operator::Addition),
+            "*" => Ok(Operator::Multiply),
+            _ => Err(ParseError::InvalidOperator(s.to_string())),
+        }
+    }
+}
+#[derive(Debug, Error, PartialEq, Eq)]
+pub enum ParseError {
+    #[error("Invalid operator: {0}")]
+    InvalidOperator(String),
+    #[error("Expected at least one line for operands")]
+    MissingOperands,
+    #[error(transparent)]
+    ParseIntError(#[from] std::num::ParseIntError),
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
 
-    fn create_minimal_test_db() -> Database {
-        let ranges = [IdRange::new(1, 9)].into();
-        let available = [3, 7].into();
-        Database {
-            fresh_id_ranges: ranges,
-            available_ids: available,
-        }
+    fn setup_test_input() -> Worksheet {
+        todo!()
     }
 
     #[test]
-    fn test_parse_minimal_happy_path() {
-        let db_string = "1-9\n\n3\n7\n";
-        let db_expected = create_minimal_test_db();
-        let db_actual = Database::from_str(db_string).unwrap();
-        assert_eq!(db_expected, db_actual);
+    fn test_parse_valid_operator() {
+        assert_eq!(Operator::from_str("+"), Ok(Operator::Addition));
+        assert_eq!(Operator::from_str("*"), Ok(Operator::Multiply));
+    }
+
+    #[test]
+    fn test_parse_invalid_operator() {
+        assert_eq!(
+            Operator::from_str("x"),
+            Err(ParseError::InvalidOperator("x".to_string()))
+        );
+    }
+
+    #[test]
+    fn test_parse_worksheet() {
+        let input = "1 2 3 4\n2 3 4 5\n+ + * *\n";
+        let actual = Worksheet::from_str(input);
+        let expected = Worksheet {
+            problems: vec![
+                Problem {
+                    operands: vec![2, 1],
+                    operator: Operator::Addition,
+                },
+                Problem {
+                    operands: vec![3, 2],
+                    operator: Operator::Addition,
+                },
+                Problem {
+                    operands: vec![4, 3],
+                    operator: Operator::Multiply,
+                },
+                Problem {
+                    operands: vec![5, 4],
+                    operator: Operator::Multiply,
+                },
+            ],
+        };
+        assert_eq!(actual, Ok(expected));
     }
 }

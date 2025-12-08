@@ -9,14 +9,22 @@ pub enum PartError {
 }
 
 pub fn run(input: &str) -> Result<u64, PartError> {
-    let db = Database::from_str(input)?;
-    let count = count_fresh_ingredient_ids_in_db(&db);
-    Ok(count as u64)
+    let worksheet = Worksheet::from_str(input)?;
+    let score = worksheet
+        .problems
+        .iter()
+        .map(|problem| problem.solve())
+        .sum();
+    Ok(score)
 }
 
-pub fn count_fresh_ingredient_ids_in_db(db: &Database) -> usize {
-    db.available_ids
-        .iter()
-        .filter(|id| db.is_fresh(**id))
-        .count()
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    #[ignore]
+    fn test_run_part() {
+        todo!()
+    }
 }
